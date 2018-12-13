@@ -166,3 +166,20 @@ function onWndLoad() {
 
 
 }
+
+
+$(function() {
+    var offset = $(".navbar-wrapper").offset();
+    var topPadding = 200;
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > offset.top) {
+            $(".navbar-wrapper").stop().animate({
+                marginTop: $(window).scrollTop() - offset.top + topPadding
+            });
+        } else {
+            $(".navbar-wrapper").stop().animate({
+                marginTop: 0
+            });
+        };
+    });
+});
