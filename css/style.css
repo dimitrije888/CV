@@ -55,7 +55,7 @@
                     margin: 0 0 0 0;
                     padding: 0 0 0 0;
                     background-size: cover;
-					box-shadow: inset 20px 0 50px black;
+					box-shadow: inset 20px -10px 100px black;
                 }
                 
                 .section-one {
