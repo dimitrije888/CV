@@ -298,16 +298,17 @@
                 .navbar-wrapper {
                     float: right;
                     display: block;
-                    background-color: black;
                     color: white;
                     position: absolute;
-                    top: 100%;
-                    right: 0;
+                    top: calc(100% + 100px);
+                    right: 20px;
                     z-index: 1;
+                    background: #0a0a0a;
                 }
                 
                 .navbar-square-wrapper {
                     padding: 20px;
+                    cursor: pointer;
                 }
                 
                 .navbar-square {
@@ -724,4 +725,12 @@
                 
                 .title-section.white-color-border {
                     border-bottom: 1px solid white;
+                }
+                
+                .add-text-underline {
+                    text-decoration: underline;
+                }
+                
+                .remove-text-underline {
+                    text-decoration: none;
                 }
