@@ -1,6 +1,6 @@
 /*! Elastic Slider (c) 2014 // Taron Mehrabyan // Ruben Sargsyan
  */
-
+var $j = jQuery.noConflict();
 window.addEventListener('load', onWndLoad, false);
 
 function onWndLoad() {
@@ -167,19 +167,72 @@ function onWndLoad() {
 
 }
 
-
-$(function() {
+//Scrolling wrapper
+$j(function() {
     var offset = $(".navbar-wrapper").offset();
     var topPadding = 200;
-    $(window).scroll(function() {
-        if ($(window).scrollTop() > offset.top) {
-            $(".navbar-wrapper").stop().animate({
-                marginTop: $(window).scrollTop() - offset.top + topPadding
+    $j(window).scroll(function() {
+        if ($j(window).scrollTop() > offset.top) {
+            $j(".navbar-wrapper").stop().animate({
+                marginTop: $j(window).scrollTop() - offset.top + topPadding
             });
         } else {
-            $(".navbar-wrapper").stop().animate({
+            $j(".navbar-wrapper").stop().animate({
                 marginTop: 0
             });
         };
+    });
+});
+
+
+
+//scroll to div
+$j(document).ready(function() {
+    $j("#section_one_arrow_down").click(function() {
+        $j('html, body').animate({
+            scrollTop: $j(".section-two-wrapper").offset().top
+        }, 500);
+    });
+
+    $j("#navbar_square_profile").click(function() {
+        $j('html, body').animate({
+            scrollTop: $j(".section-two-wrapper").offset().top
+        }, 500);
+        $j(this).removeClass("remove-text-underline").addClass("add-text-underline");
+    });
+
+    $j("#navbar_square_experiences").click(function() {
+        $j('html, body').animate({
+            scrollTop: $j(".section-three-wrapper").offset().top
+        }, 500);
+        $j(this).removeClass("remove-text-underline").addClass("add-text-underline");
+    });
+
+    $j("#navbar_square_abilities").click(function() {
+        $j('html, body').animate({
+            scrollTop: $j(".section-four-wrapper").offset().top
+        }, 500);
+        $j(this).removeClass("remove-text-underline").addClass("add-text-underline");
+    });
+
+    $j("#navbar_square_projects").click(function() {
+        $j('html, body').animate({
+            scrollTop: $j(".section-five-wrapper").offset().top
+        }, 500);
+        $j(this).removeClass("remove-text-underline").addClass("add-text-underline");
+    });
+
+    $j("#navbar_square_review").click(function() {
+        $j('html, body').animate({
+            scrollTop: $j(".section-six-wrapper").offset().top
+        }, 500);
+        $j(this).removeClass("remove-text-underline").addClass("add-text-underline");
+    });
+
+    $j("#navbar_square_contact").click(function() {
+        $j('html, body').animate({
+            scrollTop: $j(".footer-section-wrapper").offset().top
+        }, 500);
+        $j(this).removeClass("remove-text-underline").addClass("add-text-underline");
     });
 });
