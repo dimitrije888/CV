@@ -46,6 +46,40 @@
                     display: inline-block;
                 }
                 
+                .language-bar-wrapper {
+                    float: left;
+                    position: absolute;
+                    right: 0;
+                    display: inline-block;
+                }
+                
+                .language-bar {
+                    float: left;
+                    position: absolute;
+                    right: 0;
+                    display: inline-block;
+                }
+                
+                .language-bar-gb img {
+                    float: left;
+                    position: absolute;
+                    right: 20px;
+                    top: 20px;
+                    display: inline-block;
+                    width: 50px;
+                    cursor: pointer;
+                }
+                
+                .language-bar-rs img {
+                    float: left;
+                    position: absolute;
+                    right: 90px;
+                    top: 20px;
+                    display: inline-block;
+                    width: 50px;
+                    cursor: pointer;
+                }
+                
                 .section-one-wrapper {
                     background: url("../img/three.jpg") 50% 0 no-repeat;
                     height: 100vh;
@@ -77,6 +111,7 @@
                     transform: translate(0, -35%);
                     width: 100%;
                     background-color: rgba(0, 0, 0, 0.8);
+                    border-radius: 5px;
                 }
                 
                 .name-section-one {
@@ -85,6 +120,7 @@
                     font-weight: 700;
                     width: fit-content;
                     border-bottom: 2px solid white;
+                    border-radius: 5px;
                 }
                 
                 .intro-section-one {
@@ -99,6 +135,7 @@
                     font-weight: 700;
                     left: 100px;
                     background-color: rgba(0, 0, 0, 0.8);
+                    border-radius: 5px;
                 }
                 
                 .arrow-down-button-wrapper {
@@ -110,6 +147,7 @@
                     padding: 20px 20px 20px 20px;
                     background: rgba(0, 0, 0, 0.8);
                     cursor: pointer;
+                    border-radius: 5px;
                 }
                 
                 .fa.fa-chevron-down {
@@ -170,6 +208,7 @@
                     display: inline-block;
                     border-bottom: 1px solid white;
                     margin: 0;
+                    border-radius: 5px;
                 }
                 
                 .about-me-wrapper {
@@ -199,13 +238,14 @@
                     position: relative;
                     width: 100%;
                     display: inline-block;
-                    height: auto;
+                    max-height: auto;
                     max-width: 200px;
                     text-align: center;
                     left: 50%;
                     transform: translate(-50%, 0);
-                    border: 10px white solid;
+                    /*border: 10px #22252c solid;*/
                     border-radius: 50%;
+                    top: 10px;
                 }
                 
                 .about-me-details {
@@ -304,6 +344,7 @@
                     right: 20px;
                     z-index: 1;
                     background: #0a0a0a;
+                    border-radius: 5px;
                 }
                 
                 .navbar-square-wrapper {
@@ -521,7 +562,8 @@
                     overflow: hidden;
                     background-size: cover;
                     width: 100%;
-                    height: 300px;
+                    height: 250px;
+                    border-radius: 5px;
                 }
                 
                 .arrow-on-top-wrapper {
@@ -605,7 +647,7 @@
                 .slider div p {
                     color: white;
                     position: absolute;
-                    bottom: -65px;
+                    bottom: -20px;
                     font-family: font;
                     font-size: 22px;
                 }
@@ -628,16 +670,6 @@
                 }
                 /*.slider:active{ -webkit-transform:rotateZ(10deg);}*/
                 
-                .slide img {
-                    text-align: center;
-                    width: 100%;
-                    height: 90%;
-                    -webkit-user-drag: none;
-                    user-drag: none;
-                    -moz-user-drag: none;
-                    border-radius: 50%;
-                }
-                
                 .slide {
                     -webkit-user-select: none;
                     user-select: none;
@@ -656,6 +688,25 @@
                     box-sizing: border-box;
                     border-bottom: 55px #22252c solid;
                     border-radius: 5px;
+                }
+                
+                .icon-account-review-wrapper {
+                    float: left;
+                    display: inline-block;
+                    position: relative;
+                    left: 50%;
+                    top: 30%;
+                    transform: translate(-50%, -50%);
+                }
+                
+                .fa.fa-user-circle {
+                    font-size: 100px;
+                }
+                
+                .icon-account-review-wrapper img {
+                    max-width: 100px;
+                    max-height: 100px;
+                    border-radius: 50%;
                 }
                 
                 .transition {
@@ -723,14 +774,7 @@
                     color: white !important;
                 }
                 
-                .title-section.white-color-border {
-                    border-bottom: 1px solid white;
-                }
-                
-                .add-text-underline {
-                    text-decoration: underline;
-                }
-                
-                .remove-text-underline {
-                    text-decoration: none;
+                .background-color-changed {
+                    background-color: #c06014;
+                    box-shadow: 0 10px 15px black;
                 }
